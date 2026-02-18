@@ -35,6 +35,8 @@ def test_check_funds():
 
     assert food.check_funds(100) == True
     assert food.check_funds(1000) == False
+    food.deposit(100, "second deposit")
+    assert food.check_funds(200) == True
 
     assert personal.check_funds(100) == True
     assert personal.check_funds(1001) == False

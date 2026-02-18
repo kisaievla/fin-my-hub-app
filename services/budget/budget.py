@@ -50,7 +50,6 @@ class Category:
             self.ledger.append({"amount": -amount, "description": description})
             return True
 
-
     def transfer(self, amount: int | float, other_category: "Category") -> bool:
         """
         Transfer amount to another Category.
